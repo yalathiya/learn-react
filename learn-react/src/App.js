@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom'
 import { useState } from "react";
 import Navbar from "./components/Navbar.js"
 import Sidebar from './components/Sidebar.js';
+import Counter from "./components/Counter.js"
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
       <Route path ="/:category/:title" element = {<Display />}/>
      </Routes>
       
+      <Counter />
       {/* {selectedCategory && (
         <div>
           <h1> selected category : {selectedCategory} </h1>
